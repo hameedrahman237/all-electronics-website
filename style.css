@@ -1,0 +1,66 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #001F3F; /* Deep Blue */
+    color: #FFFFFF;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    color: #00FFFF; /* Electric Cyan */
+}
+
+/* Add smooth transitions for hover effects */
+a {
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: #FF4136; /* Accent Color */
+}
+
+/* Button styling */
+.button {
+    background-color: #00FFFF;
+    color: #001F3F;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #FF4136;
+}
+
+/* Responsive design */
+@media(max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}
+
+/* Animation effects */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.slide-in {
+    animation: slideIn 1s ease-out;
+}
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
